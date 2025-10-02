@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Innovative Digital Services — KPDBC Solutions</title>
+
+    <!-- Bootstrap & Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background: #0f1724;
+        color: #f8fafc;
+        font-family: Inter, system-ui, Segoe UI, Roboto, Arial;
+      }
+      .navbar {
+        background: #0b1220;
+      }
+      .navbar-brand {
+        font-weight: bold;
+        color: #06b6d4 !important;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #fff;
+        font-weight: 700;
+      }
+      p.lead {
+        color: #94a3b8;
+      }
+      .service-card {
+        background: #1e293b;
+        border-radius: 14px;
+        padding: 28px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+      }
+      .service-card:hover {
+        transform: translateY(-6px);
+        background: #273449;
+      }
+      .service-card i {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+        color: #06b6d4;
+      }
+      footer {
+        background: #0b1220;
+        padding: 25px;
+        text-align: center;
+        color: #94a3b8;
+        margin-top: 40px;
+      }
+      footer .social a {
+        color: #94a3b8;
+        font-size: 1.3rem;
+        margin: 0 8px;
+        transition: 0.3s;
+      }
+      footer .social a:hover {
+        color: #06b6d4;
+      }
+
+      /* 📱 Mobile Theme */
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 1.8rem;
+          text-align: center;
+        }
+        h2 {
+          font-size: 1.3rem;
+        }
+        h3 {
+          font-size: 1.1rem;
+        }
+        p.lead {
+          font-size: 1rem;
+          text-align: center;
+        }
+        .service-card {
+          padding: 20px;
+          border-radius: 12px;
+          text-align: left;
+        }
+        .service-card i {
+          font-size: 2rem;
+        }
+        .btn {
+          display: block;
+          width: 100%;
+          margin-top: 12px;
+        }
+      }
+
+      /* 💻 Desktop Theme */
+      @media (min-width: 769px) {
+        h1 {
+          font-size: 2.4rem;
+        }
+        h2 {
+          font-size: 1.6rem;
+        }
+        h3 {
+          font-size: 1.3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="./ChatGPT Image Jun 15, 2025, 11_05_06 AM.png"
+            alt="KPDBC"
+            width="36"
+            height="36"
+            class="me-2 rounded"
+          />
+          KPDBC Solutions
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="nav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="container text-center my-5">
+      <h1>Innovative Digital Services</h1>
+      <p class="lead">Web, Mobile & Testing Solutions for your business</p>
+    </header>
+
+    <!-- Services Grid -->
+    <main class="container my-5">
+      <div class="row g-4">
+        <!-- Web Development -->
+        <div class="col-md-4">
+          <div class="service-card h-100">
+            <i class="bi bi-globe"></i>
+            <h3>Web Development</h3>
+            <p>
+              Modern, scalable websites tailored for performance, SEO, and your
+              brand identity.
+            </p>
+            <ul class="text-start mt-3">
+              <li>✔️ Responsive Design</li>
+              <li>✔️ CMS & E-Commerce</li>
+              <li>✔️ SEO Optimization</li>
+            </ul>
+            <a
+              href="contact.html?service=Web Development"
+              class="btn btn-sm btn-info mt-3"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+
+        <!-- Mobile Apps -->
+        <div class="col-md-4">
+          <div class="service-card h-100">
+            <i class="bi bi-phone"></i>
+            <h3>Mobile Apps</h3>
+            <p>
+              Cross-platform iOS & Android apps built with clean UI/UX and
+              powerful functionality.
+            </p>
+            <ul class="text-start mt-3">
+              <li>✔️ Native & Hybrid Apps</li>
+              <li>✔️ App Store Deployment</li>
+              <li>✔️ Secure APIs</li>
+            </ul>
+            <a
+              href="contact.html?service=Mobile Apps"
+              class="btn btn-sm btn-info mt-3"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+
+        <!-- Testing -->
+        <div class="col-md-4">
+          <div class="service-card h-100">
+            <i class="bi bi-bug"></i>
+            <h3>Testing Solutions</h3>
+            <p>
+              Comprehensive QA testing services to ensure your software is
+              secure, reliable & fast.
+            </p>
+            <ul class="text-start mt-3">
+              <li>✔️ Automation & Manual QA</li>
+              <li>✔️ Security & Load Testing</li>
+              <li>✔️ Continuous Integration</li>
+            </ul>
+            <a
+              href="contact.html?service=Testing Solutions"
+              class="btn btn-sm btn-info mt-3"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="social mb-2">
+        <a href="https://www.facebook.com/profile.php?id=61581657842518"
+          ><i class="bi bi-facebook"></i
+        ></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+      </div>
+      © <span id="year"></span> KPDBC Solutions
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

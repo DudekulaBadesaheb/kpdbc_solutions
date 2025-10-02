@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chat Applications — KPDBC Solutions</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* ====== Base Theme ====== */
+      body {
+        background: #0f1724;
+        color: #f8fafc;
+        font-family: Inter, system-ui, sans-serif;
+      }
+      .navbar {
+        background: #0b1220;
+      }
+      .navbar-brand {
+        font-weight: bold;
+        color: #06b6d4 !important;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #fff;
+        font-weight: 700;
+      }
+      p.lead {
+        color: #94a3b8;
+      }
+
+      /* ====== Features ====== */
+      .feature-card {
+        background: #1e293b;
+        border-radius: 14px;
+        padding: 24px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+      }
+      .feature-card:hover {
+        transform: translateY(-6px);
+        background: #273449;
+      }
+      .feature-card i {
+        font-size: 2.2rem;
+        margin-bottom: 12px;
+        color: #06b6d4;
+      }
+
+      /* ====== Carousel Images ====== */
+      .fixed-slide {
+        height: 500px;
+        object-fit: cover;
+      }
+
+      /* ====== Footer ====== */
+      footer {
+        background: #0b1220;
+        padding: 25px;
+        text-align: center;
+        color: #94a3b8;
+        margin-top: 40px;
+      }
+      footer .social a {
+        color: #94a3b8;
+        font-size: 1.3rem;
+        margin: 0 8px;
+        transition: 0.3s;
+      }
+      footer .social a:hover {
+        color: #06b6d4;
+      }
+
+      /* ====== Responsive Breakpoints ====== */
+      @media (max-width: 992px) {
+        /* Tablet */
+        .fixed-slide {
+          height: 350px;
+        }
+        h1 {
+          font-size: 2rem;
+        }
+        h2 {
+          font-size: 1.5rem;
+        }
+      }
+
+      @media (max-width: 576px) {
+        /* Mobile */
+        .fixed-slide {
+          height: 220px;
+        }
+        h1 {
+          font-size: 1.6rem;
+        }
+        h2 {
+          font-size: 1.3rem;
+        }
+        h3 {
+          font-size: 1.1rem;
+        }
+        .feature-card {
+          padding: 16px;
+          font-size: 0.95rem;
+        }
+        footer {
+          font-size: 0.9rem;
+        }
+        .btn {
+          margin: 6px 0;
+          width: 100%; /* stack buttons on mobile */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">KPDBC Solutions</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="nav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../categories.html">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero & Carousel -->
+    <section class="container text-center my-5">
+      <h1>Chat Applications</h1>
+      <p class="lead">Real-time communication apps</p>
+
+      <div
+        id="chatCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="2500"
+      >
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img
+              src="https://assets.superblog.ai/site_cuid_cl9pmahic552151jpq6mko9ans/images/25-1731490995748-compressed.jpg"
+              class="d-block w-100 fixed-slide"
+              alt="Chat App 1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://files.ably.io/ghost/prod/2023/06/the-ultimate-guide-to-chat-app-architecture.png"
+              class="d-block w-100 fixed-slide"
+              alt="Chat App 2"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://a.storyblok.com/f/231922/2240x1260/3ed48063e2/shaadi.png/m/0x0/"
+              class="d-block w-100 fixed-slide"
+              alt="Chat App 3"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://www.mirrorfly.com/blog/wp-content/uploads/2021/09/Build-Realtime-chat-app.png"
+              class="d-block w-100 fixed-slide"
+              alt="Chat App 4"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://www.sketchappsources.com/resources/source-image/chat-app-concept-bhavnakashyap.png"
+              class="d-block w-100 fixed-slide"
+              alt="Chat App 5"
+            />
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#chatCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#chatCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <main class="container my-5">
+      <h2 class="text-center mb-4">What We Offer</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="feature-card h-100">
+            <i class="bi bi-chat-dots"></i>
+            <h3>Messaging</h3>
+            <p>Fast & secure real-time chats.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card h-100">
+            <i class="bi bi-people"></i>
+            <h3>Groups</h3>
+            <p>Group chats & collaboration.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card h-100">
+            <i class="bi bi-lock"></i>
+            <h3>Encryption</h3>
+            <p>End-to-end encrypted communication.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="./pricing.html" class="btn btn-primary">See Pricing</a>
+        <a
+          href="./contact.html?service=Chat Applications"
+          class="btn btn-info text-dark"
+          >Contact Us</a
+        >
+        <a href="./categories.html" class="btn btn-outline-light"
+          >Back to Categories</a
+        >
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>© <span id="year"></span> KPDBC Solutions</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

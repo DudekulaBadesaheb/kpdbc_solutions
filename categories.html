@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>KPDBC Solutions — Categories</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background: #0f1724;
+        color: #f8fafc;
+        font-family: Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif;
+      }
+
+      /* Navbar */
+      .navbar {
+        background: #0b1220;
+      }
+      .navbar-brand {
+        font-weight: bold;
+        color: #06b6d4 !important;
+      }
+      .nav-link {
+        color: #e6eef8 !important;
+      }
+      .nav-link.active {
+        color: #06b6d4 !important;
+        font-weight: 600;
+      }
+
+      /* Headings */
+      h1,
+      h2,
+      h5 {
+        color: #fff;
+        font-weight: 700;
+      }
+      p.text-muted {
+        color: #94a3b8 !important;
+      }
+
+      /* Cards */
+      .card {
+        background: #1e293b;
+        border: none;
+        border-radius: 14px;
+        color: #e6eef8;
+        transition: 0.3s;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+      }
+      .card:hover {
+        transform: translateY(-6px);
+        background: #273449;
+      }
+      .card-img-top {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-top-left-radius: 14px;
+        border-top-right-radius: 14px;
+      }
+
+      /* Buttons */
+      .btn-primary {
+        background: #06b6d4;
+        border: none;
+      }
+      .btn-primary:hover {
+        background: #08d0ee;
+      }
+
+      /* Footer */
+      footer {
+        background: #0b1220;
+        padding: 30px 20px;
+        margin-top: 40px;
+        text-align: center;
+        color: #94a3b8;
+      }
+      footer .social a {
+        color: #94a3b8;
+        font-size: 1.3rem;
+        margin: 0 8px;
+        transition: 0.3s;
+      }
+      footer .social a:hover {
+        color: #06b6d4;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="./ChatGPT Image Jun 15, 2025, 11_05_06 AM.png"
+            alt="KPDBC"
+            width="40"
+            height="40"
+            class="me-2 rounded"
+          />
+          KPDBC Solutions
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="nav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="categories.html">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main -->
+    <main class="container my-5">
+      <h1 class="text-center mb-4">Our Service Categories</h1>
+      <p class="text-center text-muted mb-5">
+        Choose from development or testing services and explore detailed demos.
+      </p>
+
+      <!-- Development -->
+      <h2 class="mb-3">Development</h2>
+      <div class="row g-4">
+        <!-- App Development -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="https://ionic.io/blog/wp-content/uploads/2024/07/hybridvnative-feature-image.png"
+              class="card-img-top"
+              alt="App Dev"
+            />
+            <div class="card-body">
+              <h5 class="card-title">App Development</h5>
+              <p class="card-text text-muted">Mobile apps for Android & iOS</p>
+              <a href="./app-dev.html" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web Development -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="https://abym.in/blog/wp-content/uploads/2021/05/Best-web-development-company.webp"
+              class="card-img-top"
+              alt="Web Dev"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Web Development</h5>
+              <p class="card-text text-muted">Modern responsive websites</p>
+              <a href="./web-dev.html" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game Development -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="https://www.codecademy.com/resources/blog/wp-content/uploads/2022/12/102022_Game-development_Break-into-Game-Development_Thumbnail-.png"
+              class="card-img-top"
+              alt="Game Dev"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Game Development</h5>
+              <p class="card-text text-muted">2D & 3D interactive games</p>
+              <a href="./game-dev.html" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- E-commerce -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="https://www.planetwebsolution.com/blog/wp-content/uploads/2016/06/blog-banner-big-1.jpg"
+              class="card-img-top"
+              alt="E-commerce"
+            />
+            <div class="card-body">
+              <h5 class="card-title">E-commerce Sites & Apps</h5>
+              <p class="card-text text-muted">
+                Shopping platforms with payments
+              </p>
+              <a href="./ecommerce.html" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Portfolio -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="https://cdn.prod.website-files.com/62c5836076839ad95e36215d/64fb2b64316862df3d2e099a_rcQYosTUaQ6hiJSAk7JphBXJCcZpPSAnq6u8U_3pnj0UVcHM5niGdGNBZ625bnZmRDTg4UQFOjd8tuczIfNSZ7JQeRBtnY4NHvGyGjRBe_DVE4QiDsVy9vcllRT7B1Ut7wx9CBDr945F26Um1hF4xM4.png"
+              class="card-img-top"
+              alt="Portfolio"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Portfolio Websites</h5>
+              <p class="card-text text-muted">
+                Personal and business portfolios
+              </p>
+              <a href="./portfolio.html" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="https://contentfuel.co/wp-content/uploads/2019/12/All-Time_Best_Blogging_Platforms_to_Launch_Your_Company_s_Blog_Design.jpg"
+              class="card-img-top"
+              alt="Blog"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Blog Platforms</h5>
+              <p class="card-text text-muted">Content publishing solutions</p>
+              <a href="./blog.html" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event Manager -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="https://codedesign.co/wp-content/uploads/2022/02/EventCracker-custom-web-design-1024x709.jpg?_t=1646763903"
+              class="card-img-top"
+              alt="Event Manager"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Event Manager Sites</h5>
+              <p class="card-text text-muted">Booking and event systems</p>
+              <a href="./event.html" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chat Applications -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="https://www.chanty.com/blog/wp-content/uploads/2024/03/Team-Chat-Apps.png"
+              class="card-img-top"
+              alt="Chat Apps"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Chat Applications</h5>
+              <p class="card-text text-muted">Real-time communication apps</p>
+              <a href="./chat-app.html" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CRM -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="https://cdnwebkul.webkul.com/wp-content/uploads/2020/03/og-crm-development.png"
+              class="card-img-top"
+              alt="CRM"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Custom CRM Extensions</h5>
+              <p class="card-text text-muted">Tailored CRM solutions</p>
+              <a href="./crm.html" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testing -->
+      <h2 class="mt-5 mb-3">Testing</h2>
+      <div class="row g-4">
+        <!-- Manual Testing -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="https://testingshala.com/wp-content/uploads/2023/05/manual-tester.jpg"
+              class="card-img-top"
+              alt="Manual Testing"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Manual Testing</h5>
+              <p class="card-text text-muted">End-to-end manual QA</p>
+              <a href="./manual-testing.html" class="btn btn-primary"
+                >Explore</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Automation Testing -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="https://d1ax5wqehib729.cloudfront.net/wp-content/uploads/2021/11/30043029/leverage-Artificial-Intelligence-to-Automate-Software-Application-Testing-768x433.jpg"
+              class="card-img-top"
+              alt="Automation Testing"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Automation Testing</h5>
+              <p class="card-text text-muted">Automated test suites</p>
+              <a href="./automation-testing.html" class="btn btn-primary"
+                >Explore</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- API Testing -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="https://www.click2cloud.com/blogs/API-Testing.jpg"
+              class="card-img-top"
+              alt="API Testing"
+            />
+            <div class="card-body">
+              <h5 class="card-title">API Testing</h5>
+              <p class="card-text text-muted">Robust API validation</p>
+              <a href="./api-testing.html" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Load Testing -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="https://www.testingmind.com/wp-content/uploads/2022/12/load-testing.jpg"
+              class="card-img-top"
+              alt="Load Testing"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Load Testing</h5>
+              <p class="card-text text-muted">Performance under stress</p>
+              <a href="./load-testing.html" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Security Testing -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="https://www.srm-solutions.com/wp-content/uploads/2021/10/AdobeStock_320819276-e1634637156279-1400x826.jpeg"
+              class="card-img-top"
+              alt="Security Testing"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Security Testing</h5>
+              <p class="card-text text-muted">Identify vulnerabilities</p>
+              <a href="./security-testing.html" class="btn btn-primary"
+                >Explore</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Testing -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="https://buzzclan.com/wp-content/uploads/2024/08/Mobile-App-Testing.svg"
+              class="card-img-top"
+              alt="Mobile Testing"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Mobile App Testing</h5>
+              <p class="card-text text-muted">QA for mobile platforms</p>
+              <a href="./mobile-testing.html" class="btn btn-primary"
+                >Explore</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- UAT -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="https://bairesdev.mo.cloudinary.net/blog/2021/11/UAT.jpg?tx=w_1920,q_auto"
+              class="card-img-top"
+              alt="UAT"
+            />
+            <div class="card-body">
+              <h5 class="card-title">UAT Testing</h5>
+              <p class="card-text text-muted">User acceptance testing</p>
+              <a href="./uat.html" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="social mb-2">
+        <a href="https://www.facebook.com/profile.php?id=61581657842518"
+          ><i class="bi bi-facebook"></i
+        ></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+      </div>
+      © <span id="year"></span> KPDBC Solutions
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

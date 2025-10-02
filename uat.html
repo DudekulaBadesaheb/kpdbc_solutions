@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UAT Testing — KPDBC Solutions</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* 🌙 Base Theme */
+      body {
+        background: #0f1724;
+        color: #f8fafc;
+        font-family: Inter, system-ui, sans-serif;
+      }
+      .navbar {
+        background: #0b1220;
+      }
+      .navbar-brand {
+        font-weight: bold;
+        color: #06b6d4 !important;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #fff;
+        font-weight: 700;
+      }
+      p.lead {
+        color: #94a3b8;
+      }
+      .feature-card {
+        background: #1e293b;
+        border-radius: 14px;
+        padding: 24px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+      }
+      .feature-card:hover {
+        transform: translateY(-6px);
+        background: #273449;
+      }
+      .feature-card i {
+        font-size: 2.2rem;
+        margin-bottom: 12px;
+        color: #06b6d4;
+      }
+      footer {
+        background: #0b1220;
+        padding: 25px;
+        text-align: center;
+        color: #94a3b8;
+        margin-top: 40px;
+      }
+      footer .social a {
+        color: #94a3b8;
+        font-size: 1.3rem;
+        margin: 0 8px;
+        transition: 0.3s;
+      }
+      footer .social a:hover {
+        color: #06b6d4;
+      }
+      .fixed-slide {
+        height: 500px;
+        object-fit: cover;
+      }
+
+      /* 📱 Small Devices (Mobile, <576px) */
+      @media (max-width: 575.98px) {
+        h1 {
+          font-size: 1.5rem;
+          text-align: center;
+        }
+        h2 {
+          font-size: 1.2rem;
+        }
+        h3 {
+          font-size: 1rem;
+        }
+        p.lead {
+          font-size: 0.95rem;
+          text-align: center;
+        }
+        .fixed-slide {
+          height: 200px;
+        }
+        .btn {
+          display: block;
+          width: 100%;
+          margin: 6px 0;
+        }
+        .feature-card {
+          padding: 16px;
+        }
+        footer {
+          font-size: 0.85rem;
+        }
+      }
+
+      /* 📲 Medium Devices (Tablets, ≥576px and <768px) */
+      @media (min-width: 576px) and (max-width: 767.98px) {
+        h1 {
+          font-size: 1.8rem;
+        }
+        h2 {
+          font-size: 1.3rem;
+        }
+        h3 {
+          font-size: 1.1rem;
+        }
+        p.lead {
+          font-size: 1rem;
+        }
+        .fixed-slide {
+          height: 280px;
+        }
+        .btn {
+          width: 100%;
+        }
+      }
+
+      /* 💻 Large Devices (Small Laptops, ≥768px and <1200px) */
+      @media (min-width: 768px) and (max-width: 1199.98px) {
+        h1 {
+          font-size: 2rem;
+        }
+        h2 {
+          font-size: 1.4rem;
+        }
+        h3 {
+          font-size: 1.15rem;
+        }
+        .fixed-slide {
+          height: 380px;
+        }
+      }
+
+      /* 🖥️ Extra Large Devices (Desktops, ≥1200px) */
+      @media (min-width: 1200px) {
+        h1 {
+          font-size: 2.4rem;
+        }
+        h2 {
+          font-size: 1.6rem;
+        }
+        h3 {
+          font-size: 1.25rem;
+        }
+        .fixed-slide {
+          height: 500px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">KPDBC Solutions</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="nav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../categories.html">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero + Carousel -->
+    <section class="container text-center my-5">
+      <h1>UAT Testing</h1>
+      <p class="lead">User acceptance testing for businesses</p>
+
+      <div
+        id="uatCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="2500"
+      >
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img
+              src="https://miro.medium.com/1*uwduQTiyygLEttrajX4Aew.jpeg"
+              class="d-block w-100 fixed-slide"
+              alt="User Testing"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://www.xenonstack.com/hubfs/user-acceptance-testing.png"
+              class="d-block w-100 fixed-slide"
+              alt="UAT Flow"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://blog.testlodge.com/wp-content/uploads/2022/05/what-is-user-acceptance-testing-1024x538.png"
+              class="d-block w-100 fixed-slide"
+              alt="Acceptance Testing"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://bairesdev.mo.cloudinary.net/blog/2021/11/UAT.jpg?tx=w_1920,q_auto"
+              class="d-block w-100 fixed-slide"
+              alt="UAT Session"
+            />
+          </div>
+        </div>
+        <!-- Controls -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#uatCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#uatCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <main class="container my-5">
+      <h2 class="text-center mb-4">What We Offer</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="feature-card h-100">
+            <i class="bi bi-people-check"></i>
+            <h3>Real Users</h3>
+            <p>Testing with real end-users.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card h-100">
+            <i class="bi bi-clipboard-data"></i>
+            <h3>Feedback</h3>
+            <p>Gather insights before launch.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card h-100">
+            <i class="bi bi-check2-circle"></i>
+            <h3>Validation</h3>
+            <p>Ensure product meets requirements.</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <a href="../pricing.html" class="btn btn-primary">See Pricing</a>
+        <a
+          href="../contact.html?service=UAT Testing"
+          class="btn btn-info text-dark"
+          >Contact Us</a
+        >
+        <a href="../categories.html" class="btn btn-outline-light"
+          >Back to Categories</a
+        >
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>© <span id="year"></span> KPDBC Solutions</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

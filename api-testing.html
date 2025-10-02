@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>API Testing — KPDBC Solutions</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: #0f1724;
+        color: #f8fafc;
+        font-family: Inter, system-ui, sans-serif;
+      }
+      .navbar {
+        background: #0b1220;
+      }
+      .navbar-brand {
+        font-weight: bold;
+        color: #06b6d4 !important;
+      }
+      .nav-link {
+        color: #cbd5e1 !important;
+        transition: 0.3s;
+      }
+      .nav-link:hover {
+        color: #06b6d4 !important;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #fff;
+        font-weight: 700;
+      }
+      p.lead {
+        color: #94a3b8;
+      }
+      .feature-card {
+        background: #1e293b;
+        border-radius: 14px;
+        padding: 24px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+      }
+      .feature-card:hover {
+        transform: translateY(-6px);
+        background: #273449;
+      }
+      .feature-card i {
+        font-size: 2.2rem;
+        margin-bottom: 12px;
+        color: #06b6d4;
+      }
+      footer {
+        background: #0b1220;
+        padding: 25px;
+        text-align: center;
+        color: #94a3b8;
+        margin-top: 40px;
+      }
+      footer .social a {
+        color: #94a3b8;
+        font-size: 1.3rem;
+        margin: 0 8px;
+        transition: 0.3s;
+      }
+      footer .social a:hover {
+        color: #06b6d4;
+      }
+      /* Carousel images */
+      .fixed-slide {
+        height: 500px;
+        object-fit: cover;
+      }
+      @media (max-width: 768px) {
+        .fixed-slide {
+          height: 280px;
+        }
+      }
+      @media (max-width: 576px) {
+        .fixed-slide {
+          height: 200px;
+        }
+      }
+      .btn-primary {
+        background: #06b6d4;
+        border: none;
+        font-weight: 600;
+      }
+      .btn-primary:hover {
+        background: #0dd6f0;
+      }
+      .btn-info {
+        background: #3b82f6;
+        border: none;
+      }
+      .btn-info:hover {
+        background: #60a5fa;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">KPDBC Solutions</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="nav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../categories.html">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero with Carousel -->
+    <section class="container text-center my-5">
+      <h1>API Testing</h1>
+      <p class="lead">Robust API validation & monitoring</p>
+
+      <div
+        id="apiCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="2500"
+      >
+        <div class="carousel-inner rounded shadow">
+          <div class="carousel-item active">
+            <img
+              src="https://cdn.prod.website-files.com/5ff66329429d880392f6cba2/6703dc08a6a4eacccd6fd2c5_60bdda0e212247626479da02_use%2520api.png"
+              class="d-block w-100 fixed-slide"
+              alt="API Testing Slide 1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://media.licdn.com/dms/image/v2/D5612AQEsZXr9mcIIoQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1696511023163"
+              class="d-block w-100 fixed-slide"
+              alt="API Testing Slide 2"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://www.testingxperts.com/wp-content/uploads/2023/12/Importance-of-API-Security-Testing-in-the-Retail-Sector-01-min.jpg"
+              class="d-block w-100 fixed-slide"
+              alt="API Testing Slide 3"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://fbi-reports-file.s3.amazonaws.com/fbi_l/img/featured_images/api_security_testing_tools_market.webp"
+              class="d-block w-100 fixed-slide"
+              alt="API Testing Slide 4"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://testrigor.com/wp-content/uploads/2023/12/Apps-in-browsers-mobile-IoT.jpeg"
+              class="d-block w-100 fixed-slide"
+              alt="API Testing Slide 5"
+            />
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#apiCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#apiCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <main class="container my-5">
+      <h2 class="text-center mb-4">What We Offer</h2>
+      <div class="row g-4">
+        <div class="col-md-4 col-sm-6">
+          <div class="feature-card h-100">
+            <i class="bi bi-plug"></i>
+            <h3>Integration</h3>
+            <p>Validate API integrations & workflows.</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="feature-card h-100">
+            <i class="bi bi-shield-lock"></i>
+            <h3>Security</h3>
+            <p>Ensure secure authentication & authorization.</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="feature-card h-100">
+            <i class="bi bi-speedometer2"></i>
+            <h3>Performance</h3>
+            <p>Measure response time & reliability under load.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="./pricing.html" class="btn btn-primary me-2">See Pricing</a>
+        <a
+          href="./contact.html?service=API Testing"
+          class="btn btn-info text-dark me-2"
+          >Contact Us</a
+        >
+        <a href="./categories.html" class="btn btn-outline-light"
+          >← Back to Categories</a
+        >
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      © <span id="year"></span> KPDBC Solutions
+      <div class="social mt-2">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

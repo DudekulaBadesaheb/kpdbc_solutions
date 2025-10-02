@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Security Testing — KPDBC Solutions</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: #0f1724;
+        color: #f8fafc;
+        font-family: Inter, system-ui, sans-serif;
+      }
+      .navbar {
+        background: #0b1220;
+      }
+      .navbar-brand {
+        font-weight: bold;
+        color: #06b6d4 !important;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #fff;
+        font-weight: 700;
+      }
+      p.lead {
+        color: #94a3b8;
+      }
+      .feature-card {
+        background: #1e293b;
+        border-radius: 14px;
+        padding: 24px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+      }
+      .feature-card:hover {
+        transform: translateY(-6px);
+        background: #273449;
+      }
+      .feature-card i {
+        font-size: 2.2rem;
+        margin-bottom: 12px;
+        color: #06b6d4;
+      }
+      footer {
+        background: #0b1220;
+        padding: 25px;
+        text-align: center;
+        color: #94a3b8;
+        margin-top: 40px;
+      }
+      footer .social a {
+        color: #94a3b8;
+        font-size: 1.3rem;
+        margin: 0 8px;
+        transition: 0.3s;
+      }
+      footer .social a:hover {
+        color: #06b6d4;
+      }
+
+      /* Carousel images responsive */
+      .fixed-slide {
+        height: 250px; /* mobile default */
+        object-fit: cover;
+      }
+      @media (min-width: 576px) {
+        .fixed-slide {
+          height: 350px; /* tablet */
+        }
+      }
+      @media (min-width: 992px) {
+        .fixed-slide {
+          height: 500px; /* desktop */
+        }
+      }
+
+      /* Buttons */
+      .btn-primary {
+        background: #06b6d4;
+        border: none;
+      }
+      .btn-primary:hover {
+        background: #08d0ee;
+      }
+      .btn-info {
+        background: #38bdf8;
+        border: none;
+      }
+      .btn-info:hover {
+        background: #0ea5e9;
+        color: #fff !important;
+      }
+      .btn-outline-light:hover {
+        background: rgba(255, 255, 255, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">KPDBC Solutions</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="nav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../categories.html">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section with Carousel -->
+    <section class="container text-center my-5">
+      <h1>Security Testing</h1>
+      <p class="lead">Identify vulnerabilities & strengthen apps</p>
+
+      <div
+        id="securityCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="2500"
+      >
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img
+              src="https://cdn.prod.website-files.com/619e15d781b21202de206fb5/6729bf7e2696ebd39ceb4c2d_10-crucial-steps-for-testing-mobile-app-security.webp"
+              class="d-block w-100 fixed-slide"
+              alt="Security Testing 1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://ncybersecurity.com/wp-content/uploads/2020/06/Android-Application-Pentesting.webp"
+              class="d-block w-100 fixed-slide"
+              alt="Security Testing 2"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://cheapsslsecurity.com/blog/wp-content/uploads/2018/03/mobile-application-security-for-developers.png"
+              class="d-block w-100 fixed-slide"
+              alt="Security Testing 3"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.unsplash.com/photo-1584438784894-089d6a62b8fa?w=1200"
+              class="d-block w-100 fixed-slide"
+              alt="Security Testing 4"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://media.licdn.com/dms/image/v2/D5612AQGwX6KS8N05MQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1686927221605?e=2147483647&v=beta&t=G8ZcV7szkVyJjEKU9z-ibClCpjL-Udc24o0HcQTdpWk"
+              class="d-block w-100 fixed-slide"
+              alt="Security Testing 5"
+            />
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#securityCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#securityCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <main class="container my-5">
+      <h2 class="text-center mb-4">What We Offer</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <div class="feature-card h-100">
+            <i class="bi bi-shield-lock"></i>
+            <h3>Pen Testing</h3>
+            <p>Simulated attacks to find weaknesses.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="feature-card h-100">
+            <i class="bi bi-key"></i>
+            <h3>Access Control</h3>
+            <p>Check authentication & user roles.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="feature-card h-100">
+            <i class="bi bi-lock-fill"></i>
+            <h3>Data Security</h3>
+            <p>Protect sensitive data from leaks.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="row text-center mt-5 g-3">
+        <div class="col-12 col-md-4">
+          <a href="./pricing.html" class="btn btn-primary w-100">See Pricing</a>
+        </div>
+        <div class="col-12 col-md-4">
+          <a
+            href="./contact.html?service=Security Testing"
+            class="btn btn-info w-100 text-dark"
+            >Contact Us</a
+          >
+        </div>
+        <div class="col-12 col-md-4">
+          <a href="./categories.html" class="btn btn-outline-light w-100"
+            >Back to Categories</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>© <span id="year"></span> KPDBC Solutions</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>KPDBC Solutions — Home</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Inter", system-ui, Segoe UI, Roboto, Arial;
+        background: #0f1724;
+        color: #e6eef8;
+      }
+      .navbar {
+        background: rgba(255, 255, 255, 0.05);
+      }
+      .hero {
+        margin-top: 20px;
+      }
+      .carousel-item img {
+        border-radius: 16px;
+        max-height: 450px;
+        object-fit: cover;
+        width: 100%;
+      }
+      .card {
+        background: #0b1220;
+        border: none;
+        border-radius: 12px;
+      }
+      .card img {
+        border-radius: 10px;
+      }
+      footer {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 20px;
+        text-align: center;
+        margin-top: 40px;
+      }
+      footer .social-icons a {
+        margin: 0 10px;
+        color: #e6eef8;
+        font-size: 24px;
+        transition: 0.3s;
+      }
+      footer .social-icons a:hover {
+        color: #06b6d4;
+      }
+
+      /* ✅ Mobile Theme (phones & tablets) */
+      @media (max-width: 768px) {
+        body {
+          font-size: 0.95rem;
+        }
+        .navbar-brand img {
+          width: 32px;
+          height: 32px;
+        }
+        .carousel-caption h1 {
+          font-size: 1.4rem;
+        }
+        .carousel-caption p {
+          font-size: 0.9rem;
+        }
+        .carousel-caption .btn {
+          padding: 6px 12px;
+          font-size: 0.8rem;
+        }
+        h2 {
+          font-size: 1.3rem;
+          text-align: center;
+        }
+        .card img {
+          height: auto;
+          max-height: 200px;
+        }
+        .card h5 {
+          font-size: 1rem;
+        }
+        .card p {
+          font-size: 0.85rem;
+        }
+        footer p {
+          font-size: 0.85rem;
+        }
+      }
+
+      /* ✅ PC / Desktop Theme */
+      @media (min-width: 769px) {
+        body {
+          font-size: 1.05rem;
+        }
+        .carousel-caption h1 {
+          font-size: 2rem;
+        }
+        .carousel-caption p {
+          font-size: 1.1rem;
+        }
+        h2 {
+          font-size: 1.6rem;
+        }
+        .card h5 {
+          font-size: 1.2rem;
+        }
+        .card p {
+          font-size: 1rem;
+        }
+        footer p {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img
+            src="./ChatGPT Image Jun 15, 2025, 11_05_06 AM.png"
+            alt="KPDBC"
+            width="40"
+            height="40"
+            class="me-2 rounded"
+          />
+          KPDBC Solutions
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="categories.html">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <div
+      id="heroCarousel"
+      class="carousel slide hero container"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active text-center">
+          <img
+            src="https://picsum.photos/1100/400?random=1"
+            alt="Promo 1"
+            class="img-fluid"
+          />
+          <div class="carousel-caption">
+            <h1>Welcome to KPDBC Solutions</h1>
+            <p>Build fast. Test smart. Launch confident.</p>
+            <a href="categories.html" class="btn btn-primary btn-sm">Explore</a>
+            <a href="pricing.html" class="btn btn-outline-light btn-sm"
+              >Pricing</a
+            >
+          </div>
+        </div>
+        <div class="carousel-item text-center">
+          <img
+            src="https://www.marketingfacts.nl/wp-content/uploads/images/imagesblog/Digital_Transformation_HEADER.png"
+            alt="Promo 2"
+            class="img-fluid"
+          />
+          <div class="carousel-caption">
+            <h1>Innovative Digital Services</h1>
+            <p>Web, Mobile & Testing Solutions</p>
+            <a href="./services.html" class="btn btn-info text-dark btn-sm"
+              >Learn More</a
+            >
+          </div>
+        </div>
+        <div class="carousel-item text-center">
+          <img
+            src="https://www.thecuneiform.com/wp-content/uploads/2024/07/Blog-Banner-Image-2-2.webp"
+            alt="Promo 3"
+            class="img-fluid"
+          />
+          <div class="carousel-caption">
+            <h1>Automation & Cloud Ready</h1>
+            <p>Scalable testing & cloud solutions</p>
+            <a href="./automation-cloud.html" class="btn btn-success btn-sm"
+              >View Demo</a
+            >
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#heroCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#heroCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!-- Featured Demos -->
+    <section class="container my-5">
+      <h2 class="text-center mb-4">Featured Demos</h2>
+      <div class="row g-4">
+        <div class="col-md-4 col-sm-6 col-12">
+          <div class="card p-3 h-100 text-center">
+            <img
+              src="https://bairesdev.mo.cloudinary.net/blog/2023/10/Steps-of-Mobile-App-Development.jpg?tx=w_1920,q_auto"
+              alt="App demo"
+              class="mb-3 img-fluid"
+            />
+            <h5>App Development — Demo</h5>
+            <p class="text-muted">Mobile app walkthrough</p>
+            <a href="./app-dev.html" class="btn btn-primary btn-sm">View</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12">
+          <div class="card p-3 h-100 text-center">
+            <img
+              src="https://swapithub.com/wp-content/uploads/2023/05/Behind-the-scenes-core-elements-of-web-development.jpg"
+              alt="Web demo"
+              class="mb-3 img-fluid"
+            />
+            <h5>Web Development — Demo</h5>
+            <p class="text-muted">Responsive web app preview</p>
+            <a href="./web-dev.html" class="btn btn-info text-dark btn-sm"
+              >View</a
+            >
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12">
+          <div class="card p-3 h-100 text-center">
+            <img
+              src="https://www.scnsoft.com/blog-pictures/test-automation/top-tools-in-automated-testing.png"
+              alt="Testing demo"
+              class="mb-3 img-fluid"
+            />
+            <h5>Automation Testing — Demo</h5>
+            <p class="text-muted">Example automation workflow</p>
+            <a href="./automation-testing.html" class="btn btn-success btn-sm"
+              >View</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="container my-5">
+      <h2>Why Choose KPDBC Solutions?</h2>
+      <ul class="text-muted">
+        <li>Experienced engineers & testers</li>
+        <li>Transparent pricing & fast delivery</li>
+        <li>End-to-end service: design → build → test → deploy</li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© <span id="year"></span> KPDBC Solutions</p>
+      <div class="social-icons">
+        <a
+          href="https://www.facebook.com/profile.php?id=61581657842518"
+          target="_blank"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="https://twitter.com/" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://instagram.com/" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://linkedin.com/" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://youtube.com/" target="_blank"
+          ><i class="fab fa-youtube"></i
+        ></a>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

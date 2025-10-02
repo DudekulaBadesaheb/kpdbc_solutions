@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Automation & Cloud Ready — KPDBC Solutions</title>
+
+    <!-- Bootstrap & Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background: #0f1724;
+        color: #f8fafc;
+        font-family: Inter, system-ui, Segoe UI, Roboto, Arial;
+      }
+      .navbar {
+        background: #0b1220;
+      }
+      .navbar-brand {
+        font-weight: bold;
+        color: #06b6d4 !important;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #fff;
+        font-weight: 700;
+      }
+      p.lead {
+        color: #94a3b8;
+      }
+      .feature-card {
+        background: #1e293b;
+        border-radius: 14px;
+        padding: 24px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+      }
+      .feature-card:hover {
+        transform: translateY(-6px);
+        background: #273449;
+      }
+      .feature-card i {
+        font-size: 2.2rem;
+        margin-bottom: 12px;
+        color: #06b6d4;
+      }
+      footer {
+        background: #0b1220;
+        padding: 25px;
+        text-align: center;
+        color: #94a3b8;
+        margin-top: 40px;
+      }
+      footer .social a {
+        color: #94a3b8;
+        font-size: 1.3rem;
+        margin: 0 8px;
+        transition: 0.3s;
+      }
+      footer .social a:hover {
+        color: #06b6d4;
+      }
+
+      /* Carousel Image Fix */
+      .fixed-slide {
+        width: 100%;
+        height: 400px; /* default (tablet/pc) */
+        object-fit: cover;
+      }
+
+      /* Mobile View */
+      @media (max-width: 576px) {
+        .fixed-slide {
+          height: 220px; /* smaller for phones */
+        }
+        h1 {
+          font-size: 1.6rem;
+        }
+        p.lead {
+          font-size: 0.9rem;
+        }
+      }
+
+      /* Tablet View */
+      @media (min-width: 577px) and (max-width: 991px) {
+        .fixed-slide {
+          height: 300px; /* medium for tablets */
+        }
+        h1 {
+          font-size: 2rem;
+        }
+        p.lead {
+          font-size: 1rem;
+        }
+      }
+
+      /* PC / Large Screens */
+      @media (min-width: 992px) {
+        .fixed-slide {
+          height: 450px; /* bigger for desktops */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="./ChatGPT Image Jun 15, 2025, 11_05_06 AM.png"
+            alt="KPDBC"
+            width="36"
+            height="36"
+            class="me-2 rounded"
+          />
+          KPDBC Solutions
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="nav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <section class="container text-center my-5">
+      <h1>Automation & Cloud Ready</h1>
+      <p class="lead">Scalable testing & cloud solutions</p>
+
+      <div
+        id="manualCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="2500"
+      >
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img
+              src="https://testgrid.io/blog/wp-content/uploads/2024/02/Benefits-of-Cloud-Based-Automation-Testing.png"
+              class="d-block w-100 fixed-slide"
+              alt="Slide 1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://luxequality.com/_next/image/?url=https%3A%2F%2Fluxequality.s3.us-east-1.amazonaws.com%2FCloud_Automation_Testing_2fea154965.png&w=3840&q=75"
+              class="d-block w-100 fixed-slide"
+              alt="Slide 2"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://assets.techrepublic.com/uploads/2022/08/cloud-testing-tools.jpeg"
+              class="d-block w-100 fixed-slide"
+              alt="Slide 3"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://www.weka.io/wp-content/uploads/files/2022/09/cloud-automation-img.jpg"
+              class="d-block w-100 fixed-slide"
+              alt="Slide 4"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://www.hstoday.us/wp-content/uploads/2024/03/iStock-1399936043.jpg"
+              class="d-block w-100 fixed-slide"
+              alt="Slide 5"
+            />
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#manualCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#manualCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- What We Offer -->
+    <main class="container my-5">
+      <h2 class="text-center mb-4">What We Offer</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="feature-card h-100">
+            <i class="bi bi-robot"></i>
+            <h3>Test Automation</h3>
+            <p>Accelerated QA with Selenium, Cypress & custom frameworks.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card h-100">
+            <i class="bi bi-cloud-check"></i>
+            <h3>Cloud Deployment</h3>
+            <p>CI/CD pipelines on AWS, Azure & GCP for scalable releases.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card h-100">
+            <i class="bi bi-shield-lock"></i>
+            <h3>Secure Scaling</h3>
+            <p>
+              Enterprise-grade testing with integrated security & compliance.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="pricing.html" class="btn btn-info me-2"
+          ><i class="bi bi-currency-dollar"></i> See Pricing</a
+        >
+        <a
+          href="contact.html?service=Automation & Cloud Ready"
+          class="btn btn-outline-light"
+          ><i class="bi bi-chat-dots"></i> Contact Us</a
+        >
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="social mb-2">
+        <a href="https://www.facebook.com/profile.php?id=61581657842518"
+          ><i class="bi bi-facebook"></i
+        ></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+      </div>
+      © <span id="year"></span> KPDBC Solutions
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

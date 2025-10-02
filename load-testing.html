@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Load Testing — KPDBC Solutions</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: #0f1724;
+        color: #f8fafc;
+        font-family: Inter, system-ui, sans-serif;
+      }
+      .navbar {
+        background: #0b1220;
+      }
+      .navbar-brand {
+        font-weight: bold;
+        color: #06b6d4 !important;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #fff;
+        font-weight: 700;
+      }
+      p.lead {
+        color: #94a3b8;
+      }
+      .feature-card {
+        background: #1e293b;
+        border-radius: 14px;
+        padding: 24px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+      }
+      .feature-card:hover {
+        transform: translateY(-6px);
+        background: #273449;
+      }
+      .feature-card i {
+        font-size: 2.2rem;
+        margin-bottom: 12px;
+        color: #06b6d4;
+      }
+      footer {
+        background: #0b1220;
+        padding: 25px;
+        text-align: center;
+        color: #94a3b8;
+        margin-top: 40px;
+      }
+      footer .social a {
+        color: #94a3b8;
+        font-size: 1.3rem;
+        margin: 0 8px;
+        transition: 0.3s;
+      }
+      footer .social a:hover {
+        color: #06b6d4;
+      }
+      .fixed-slide {
+        height: 500px; /* default desktop */
+        object-fit: cover;
+      }
+      @media (max-width: 768px) {
+        .fixed-slide {
+          height: 300px; /* tablets */
+        }
+      }
+      @media (max-width: 576px) {
+        .fixed-slide {
+          height: 220px; /* phones */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">KPDBC Solutions</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="nav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../categories.html">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="container text-center my-5">
+      <h1>Load Testing</h1>
+      <p class="lead">Performance testing under stress</p>
+
+      <!-- Carousel -->
+      <div
+        id="loadCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="2500"
+      >
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img
+              src="https://testpros.com/wp-content/uploads/2020/07/performance-testing-company.jpg"
+              class="d-block w-100 fixed-slide"
+              alt="Load Testing 1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://kiwiqa.co.uk/wp-content/uploads/2021/12/Load-Testing-vs-Performance-Testing-vs-Stress-Testing.jpg"
+              class="d-block w-100 fixed-slide"
+              alt="Load Testing 2"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://saigontechnology.com/wp-content/uploads/testing-of-mobile-application-challenges-and-best-practices.webp"
+              class="d-block w-100 fixed-slide"
+              alt="Load Testing 3"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://cdn.prod.website-files.com/64b7ba4dc9375b7b74b2135e/64cb8dd217ec52afbb29d995_58-%20Performance%20Testing%20vs%20Stress%20Testing%20vs%20Load%20Testing.png"
+              class="d-block w-100 fixed-slide"
+              alt="Load Testing 4"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://media.licdn.com/dms/image/v2/D4D12AQFhjiKdqsj12g/article-cover_image-shrink_600_2000/0/1692088056573"
+              class="d-block w-100 fixed-slide"
+              alt="Load Testing 5"
+            />
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#loadCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#loadCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <main class="container my-5">
+      <h2 class="text-center mb-4">What We Offer</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="feature-card h-100">
+            <i class="bi bi-cpu"></i>
+            <h3>Scalability</h3>
+            <p>Test applications under heavy user loads efficiently.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card h-100">
+            <i class="bi bi-speedometer2"></i>
+            <h3>Performance</h3>
+            <p>Benchmark critical system performance metrics.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card h-100">
+            <i class="bi bi-activity"></i>
+            <h3>Monitoring</h3>
+            <p>Track CPU, memory, and bandwidth usage in real-time.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="./pricing.html" class="btn btn-primary">See Pricing</a>
+        <a
+          href="./contact.html?service=Load Testing"
+          class="btn btn-info text-dark"
+          >Contact Us</a
+        >
+        <a href="./categories.html" class="btn btn-outline-light"
+          >Back to Categories</a
+        >
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      © <span id="year"></span> KPDBC Solutions
+      <div class="social mt-2">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
