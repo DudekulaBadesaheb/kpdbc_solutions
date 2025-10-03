@@ -21,8 +21,6 @@
         color: #f8fafc;
         font-family: Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif;
       }
-
-      /* Navbar */
       .navbar {
         background: #0b1220;
       }
@@ -37,8 +35,6 @@
         color: #06b6d4 !important;
         font-weight: 600;
       }
-
-      /* Headings */
       h1,
       h2,
       h5 {
@@ -48,8 +44,6 @@
       p.text-muted {
         color: #94a3b8 !important;
       }
-
-      /* Cards */
       .card {
         background: #1e293b;
         border: none;
@@ -64,25 +58,21 @@
       }
       .card-img-top {
         width: 100%;
-        height: 200px;
+        height: 180px;
         object-fit: cover;
         border-top-left-radius: 14px;
         border-top-right-radius: 14px;
       }
-
-      /* Buttons */
       .btn-primary {
-        background: #06b6d4;
+        background: linear-gradient(90deg, #06b6d4, #3b82f6);
         border: none;
       }
       .btn-primary:hover {
-        background: #08d0ee;
+        background: linear-gradient(90deg, #08d0ee, #2563eb);
       }
-
-      /* Footer */
       footer {
         background: #0b1220;
-        padding: 30px 20px;
+        padding: 30px 20px 80px;
         margin-top: 40px;
         text-align: center;
         color: #94a3b8;
@@ -96,22 +86,57 @@
       footer .social a:hover {
         color: #06b6d4;
       }
+      /* Permanent category buttons */
+      .category-switch {
+        position: fixed;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+      }
+
+      /* Mobile adjustments */
+      @media (max-width: 767px) {
+        .col-md-4 {
+          flex: 0 0 50%;
+          max-width: 50%; /* 2 per row on mobile */
+        }
+        /* Hide full cards on mobile, show buttons instead */
+        .service-card {
+          display: none;
+        }
+        .service-btns {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+        .service-btns a {
+          flex: 0 0 48%;
+          background: linear-gradient(90deg, #06b6d4, #3b82f6);
+          color: white;
+          padding: 12px;
+          border-radius: 10px;
+          text-decoration: none;
+          text-align: center;
+          font-weight: 600;
+          font-size: 0.9rem;
+        }
+        .service-btns a:hover {
+          background: linear-gradient(90deg, #08d0ee, #2563eb);
+        }
+      }
+      @media (min-width: 768px) {
+        .service-btns {
+          display: none;
+        } /* Show only cards on desktop */
+      }
     </style>
   </head>
   <body>
     <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img
-            src="./ChatGPT Image Jun 15, 2025, 11_05_06 AM.png"
-            alt="KPDBC"
-            width="40"
-            height="40"
-            class="me-2 rounded"
-          />
-          KPDBC Solutions
-        </a>
+        <a class="navbar-brand" href="index.html">KPDBC Solutions</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -143,282 +168,299 @@
     <main class="container my-5">
       <h1 class="text-center mb-4">Our Service Categories</h1>
       <p class="text-center text-muted mb-5">
-        Choose from development or testing services and explore detailed demos.
+        Choose Development or Testing to explore services.
       </p>
 
-      <!-- Development -->
-      <h2 class="mb-3">Development</h2>
-      <div class="row g-4">
-        <!-- App Development -->
-        <div class="col-md-4">
+      <!-- Categories First Screen -->
+      <div id="categories" class="row g-4 text-center">
+        <div class="col-md-6">
           <div class="card h-100">
             <img
               src="https://ionic.io/blog/wp-content/uploads/2024/07/hybridvnative-feature-image.png"
               class="card-img-top"
-              alt="App Dev"
+              alt="Development"
             />
             <div class="card-body">
-              <h5 class="card-title">App Development</h5>
-              <p class="card-text text-muted">Mobile apps for Android & iOS</p>
-              <a href="./app-dev.html" class="btn btn-primary">Explore</a>
+              <h5 class="card-title">Development</h5>
+              <a
+                href="javascript:void(0)"
+                onclick="showServices('development')"
+                class="btn btn-primary"
+                >Explore Development</a
+              >
             </div>
           </div>
         </div>
-
-        <!-- Web Development -->
-        <div class="col-md-4">
+        <div class="col-md-6">
           <div class="card h-100">
             <img
-              src="https://abym.in/blog/wp-content/uploads/2021/05/Best-web-development-company.webp"
+              src="https://testingshala.com/wp-content/uploads/2023/05/manual-tester.jpg"
               class="card-img-top"
-              alt="Web Dev"
+              alt="Testing"
             />
             <div class="card-body">
-              <h5 class="card-title">Web Development</h5>
-              <p class="card-text text-muted">Modern responsive websites</p>
-              <a href="./web-dev.html" class="btn btn-primary">Explore</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Game Development -->
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img
-              src="https://www.codecademy.com/resources/blog/wp-content/uploads/2022/12/102022_Game-development_Break-into-Game-Development_Thumbnail-.png"
-              class="card-img-top"
-              alt="Game Dev"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Game Development</h5>
-              <p class="card-text text-muted">2D & 3D interactive games</p>
-              <a href="./game-dev.html" class="btn btn-primary">Explore</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- E-commerce -->
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img
-              src="https://www.planetwebsolution.com/blog/wp-content/uploads/2016/06/blog-banner-big-1.jpg"
-              class="card-img-top"
-              alt="E-commerce"
-            />
-            <div class="card-body">
-              <h5 class="card-title">E-commerce Sites & Apps</h5>
-              <p class="card-text text-muted">
-                Shopping platforms with payments
-              </p>
-              <a href="./ecommerce.html" class="btn btn-primary">Explore</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Portfolio -->
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img
-              src="https://cdn.prod.website-files.com/62c5836076839ad95e36215d/64fb2b64316862df3d2e099a_rcQYosTUaQ6hiJSAk7JphBXJCcZpPSAnq6u8U_3pnj0UVcHM5niGdGNBZ625bnZmRDTg4UQFOjd8tuczIfNSZ7JQeRBtnY4NHvGyGjRBe_DVE4QiDsVy9vcllRT7B1Ut7wx9CBDr945F26Um1hF4xM4.png"
-              class="card-img-top"
-              alt="Portfolio"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Portfolio Websites</h5>
-              <p class="card-text text-muted">
-                Personal and business portfolios
-              </p>
-              <a href="./portfolio.html" class="btn btn-primary">Explore</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Blog -->
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img
-              src="https://contentfuel.co/wp-content/uploads/2019/12/All-Time_Best_Blogging_Platforms_to_Launch_Your_Company_s_Blog_Design.jpg"
-              class="card-img-top"
-              alt="Blog"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Blog Platforms</h5>
-              <p class="card-text text-muted">Content publishing solutions</p>
-              <a href="./blog.html" class="btn btn-primary">Explore</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Event Manager -->
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img
-              src="https://codedesign.co/wp-content/uploads/2022/02/EventCracker-custom-web-design-1024x709.jpg?_t=1646763903"
-              class="card-img-top"
-              alt="Event Manager"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Event Manager Sites</h5>
-              <p class="card-text text-muted">Booking and event systems</p>
-              <a href="./event.html" class="btn btn-primary">Explore</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Chat Applications -->
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img
-              src="https://www.chanty.com/blog/wp-content/uploads/2024/03/Team-Chat-Apps.png"
-              class="card-img-top"
-              alt="Chat Apps"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Chat Applications</h5>
-              <p class="card-text text-muted">Real-time communication apps</p>
-              <a href="./chat-app.html" class="btn btn-primary">Explore</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- CRM -->
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img
-              src="https://cdnwebkul.webkul.com/wp-content/uploads/2020/03/og-crm-development.png"
-              class="card-img-top"
-              alt="CRM"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Custom CRM Extensions</h5>
-              <p class="card-text text-muted">Tailored CRM solutions</p>
-              <a href="./crm.html" class="btn btn-primary">Explore</a>
+              <h5 class="card-title">Testing</h5>
+              <a
+                href="javascript:void(0)"
+                onclick="showServices('testing')"
+                class="btn btn-primary"
+                >Explore Testing</a
+              >
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Testing -->
-      <h2 class="mt-5 mb-3">Testing</h2>
-      <div class="row g-4">
-        <!-- Manual Testing -->
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img
-              src="https://testingshala.com/wp-content/uploads/2023/05/manual-tester.jpg"
-              class="card-img-top"
-              alt="Manual Testing"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Manual Testing</h5>
-              <p class="card-text text-muted">End-to-end manual QA</p>
-              <a href="./manual-testing.html" class="btn btn-primary"
-                >Explore</a
-              >
+      <!-- Development Services -->
+      <div id="development" class="d-none">
+        <h2 class="mb-3">Development Services</h2>
+        <div class="row g-4 service-card">
+          <!-- 9 Development services -->
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img
+                src="https://ionic.io/blog/wp-content/uploads/2024/07/hybridvnative-feature-image.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5>App Development</h5>
+                <p class="text-muted">Mobile apps</p>
+                <a href="./app-dev.html" class="btn btn-primary">Explore</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img
+                src="https://abym.in/blog/wp-content/uploads/2021/05/Best-web-development-company.webp"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5>Web Development</h5>
+                <p class="text-muted">Responsive websites</p>
+                <a href="./web-dev.html" class="btn btn-primary">Explore</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img
+                src="https://www.codecademy.com/resources/blog/wp-content/uploads/2022/12/102022_Game-development_Break-into-Game-Development_Thumbnail-.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5>Game Development</h5>
+                <p class="text-muted">2D/3D games</p>
+                <a href="./game-dev.html" class="btn btn-primary">Explore</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img
+                src="https://www.planetwebsolution.com/blog/wp-content/uploads/2016/06/blog-banner-big-1.jpg"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5>E-commerce</h5>
+                <p class="text-muted">Online stores</p>
+                <a href="./ecommerce.html" class="btn btn-primary">Explore</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img
+                src="https://cdn.prod.website-files.com/.../portfolio.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5>Portfolio</h5>
+                <p class="text-muted">Personal sites</p>
+                <a href="./portfolio.html" class="btn btn-primary">Explore</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img
+                src="https://contentfuel.co/wp-content/uploads/2019/12/All-Time_Best_Blogging_Platforms.jpg"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5>Blog Platforms</h5>
+                <p class="text-muted">Content publishing</p>
+                <a href="./blog.html" class="btn btn-primary">Explore</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img
+                src="https://codedesign.co/wp-content/uploads/2022/02/EventCracker-custom-web-design.jpg"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5>Event Manager</h5>
+                <p class="text-muted">Event booking</p>
+                <a href="./event.html" class="btn btn-primary">Explore</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img
+                src="https://www.chanty.com/blog/wp-content/uploads/2024/03/Team-Chat-Apps.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5>Chat Apps</h5>
+                <p class="text-muted">Messaging apps</p>
+                <a href="./chat-app.html" class="btn btn-primary">Explore</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img
+                src="https://cdnwebkul.webkul.com/wp-content/uploads/2020/03/og-crm-development.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5>CRM Extensions</h5>
+                <p class="text-muted">Custom CRM</p>
+                <a href="./crm.html" class="btn btn-primary">Explore</a>
+              </div>
             </div>
           </div>
         </div>
+        <!-- Mobile buttons -->
+        <div class="service-btns">
+          <a href="./app-dev.html">App Dev</a>
+          <a href="./web-dev.html">Web Dev</a>
+          <a href="./game-dev.html">Game Dev</a>
+          <a href="./ecommerce.html">E-commerce</a>
+          <a href="./portfolio.html">Portfolio</a>
+          <a href="./blog.html">Blog</a>
+          <a href="./event.html">Event Manager</a>
+          <a href="./chat-app.html">Chat Apps</a>
+          <a href="./crm.html">CRM</a>
+        </div>
+      </div>
 
-        <!-- Automation Testing -->
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img
-              src="https://d1ax5wqehib729.cloudfront.net/wp-content/uploads/2021/11/30043029/leverage-Artificial-Intelligence-to-Automate-Software-Application-Testing-768x433.jpg"
-              class="card-img-top"
-              alt="Automation Testing"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Automation Testing</h5>
-              <p class="card-text text-muted">Automated test suites</p>
-              <a href="./automation-testing.html" class="btn btn-primary"
-                >Explore</a
-              >
+      <!-- Testing Services -->
+      <div id="testing" class="d-none">
+        <h2 class="mb-3">Testing Services</h2>
+        <div class="row g-4 service-card">
+          <!-- 7 Testing services -->
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img
+                src="https://testingshala.com/manual.jpg"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5>Manual Testing</h5>
+                <p class="text-muted">QA checks</p>
+                <a href="./manual-testing.html" class="btn btn-primary"
+                  >Explore</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img
+                src="https://d1ax5wqehib729.cloudfront.net/automation.jpg"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5>Automation Testing</h5>
+                <p class="text-muted">Automated tests</p>
+                <a href="./automation-testing.html" class="btn btn-primary"
+                  >Explore</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img
+                src="https://www.click2cloud.com/blogs/API-Testing.jpg"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5>API Testing</h5>
+                <p class="text-muted">API validation</p>
+                <a href="./api-testing.html" class="btn btn-primary">Explore</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img
+                src="https://www.testingmind.com/load.jpg"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5>Load Testing</h5>
+                <p class="text-muted">Stress testing</p>
+                <a href="./load-testing.html" class="btn btn-primary"
+                  >Explore</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img
+                src="https://www.srm-solutions.com/security.jpg"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5>Security Testing</h5>
+                <p class="text-muted">Vulnerability check</p>
+                <a href="./security-testing.html" class="btn btn-primary"
+                  >Explore</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="https://buzzclan.com/mobile.jpg" class="card-img-top" />
+              <div class="card-body">
+                <h5>Mobile Testing</h5>
+                <p class="text-muted">Mobile QA</p>
+                <a href="./mobile-testing.html" class="btn btn-primary"
+                  >Explore</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img
+                src="https://bairesdev.mo.cloudinary.net/uat.jpg"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5>UAT</h5>
+                <p class="text-muted">User acceptance</p>
+                <a href="./uat.html" class="btn btn-primary">Explore</a>
+              </div>
             </div>
           </div>
         </div>
-
-        <!-- API Testing -->
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img
-              src="https://www.click2cloud.com/blogs/API-Testing.jpg"
-              class="card-img-top"
-              alt="API Testing"
-            />
-            <div class="card-body">
-              <h5 class="card-title">API Testing</h5>
-              <p class="card-text text-muted">Robust API validation</p>
-              <a href="./api-testing.html" class="btn btn-primary">Explore</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Load Testing -->
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img
-              src="https://www.testingmind.com/wp-content/uploads/2022/12/load-testing.jpg"
-              class="card-img-top"
-              alt="Load Testing"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Load Testing</h5>
-              <p class="card-text text-muted">Performance under stress</p>
-              <a href="./load-testing.html" class="btn btn-primary">Explore</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Security Testing -->
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img
-              src="https://www.srm-solutions.com/wp-content/uploads/2021/10/AdobeStock_320819276-e1634637156279-1400x826.jpeg"
-              class="card-img-top"
-              alt="Security Testing"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Security Testing</h5>
-              <p class="card-text text-muted">Identify vulnerabilities</p>
-              <a href="./security-testing.html" class="btn btn-primary"
-                >Explore</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Mobile Testing -->
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img
-              src="https://buzzclan.com/wp-content/uploads/2024/08/Mobile-App-Testing.svg"
-              class="card-img-top"
-              alt="Mobile Testing"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Mobile App Testing</h5>
-              <p class="card-text text-muted">QA for mobile platforms</p>
-              <a href="./mobile-testing.html" class="btn btn-primary"
-                >Explore</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- UAT -->
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img
-              src="https://bairesdev.mo.cloudinary.net/blog/2021/11/UAT.jpg?tx=w_1920,q_auto"
-              class="card-img-top"
-              alt="UAT"
-            />
-            <div class="card-body">
-              <h5 class="card-title">UAT Testing</h5>
-              <p class="card-text text-muted">User acceptance testing</p>
-              <a href="./uat.html" class="btn btn-primary">Explore</a>
-            </div>
-          </div>
+        <!-- Mobile buttons -->
+        <div class="service-btns">
+          <a href="./manual-testing.html">Manual</a>
+          <a href="./automation-testing.html">Automation</a>
+          <a href="./api-testing.html">API</a>
+          <a href="./load-testing.html">Load</a>
+          <a href="./security-testing.html">Security</a>
+          <a href="./mobile-testing.html">Mobile</a>
+          <a href="./uat.html">UAT</a>
         </div>
       </div>
     </main>
@@ -426,9 +468,7 @@
     <!-- Footer -->
     <footer>
       <div class="social mb-2">
-        <a href="https://www.facebook.com/profile.php?id=61581657842518"
-          ><i class="bi bi-facebook"></i
-        ></a>
+        <a href="#"><i class="bi bi-facebook"></i></a>
         <a href="#"><i class="bi bi-twitter"></i></a>
         <a href="#"><i class="bi bi-linkedin"></i></a>
         <a href="#"><i class="bi bi-instagram"></i></a>
@@ -436,9 +476,32 @@
       © <span id="year"></span> KPDBC Solutions
     </footer>
 
+    <!-- Permanent category buttons -->
+    <div class="category-switch">
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="showServices('development')">
+          Development
+        </button>
+        <button class="btn btn-primary" onclick="showServices('testing')">
+          Testing
+        </button>
+      </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
+
+      function showServices(type) {
+        document.getElementById("categories").classList.add("d-none");
+        document.getElementById("development").classList.add("d-none");
+        document.getElementById("testing").classList.add("d-none");
+        if (type === "development") {
+          document.getElementById("development").classList.remove("d-none");
+        } else if (type === "testing") {
+          document.getElementById("testing").classList.remove("d-none");
+        }
+      }
     </script>
   </body>
 </html>
